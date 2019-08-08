@@ -14,6 +14,9 @@
 		049E269F22F955040038019D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049E269D22F955040038019D /* LaunchScreen.storyboard */; };
 		049E26AA22F955040038019D /* SimbaBirthdayDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E26A922F955040038019D /* SimbaBirthdayDemoTests.swift */; };
 		049E26B522F955040038019D /* SimbaBirthdayDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E26B422F955040038019D /* SimbaBirthdayDemoUITests.swift */; };
+		049E26C622F959D90038019D /* CustomDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E26C522F959D90038019D /* CustomDate.swift */; };
+		049E26C822F95B260038019D /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E26C722F95B260038019D /* Characters.swift */; };
+		049E26CA22F960C90038019D /* BirthdayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E26C922F960C90038019D /* BirthdayViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		049E26B022F955040038019D /* SimbaBirthdayDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimbaBirthdayDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		049E26B422F955040038019D /* SimbaBirthdayDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimbaBirthdayDemoUITests.swift; sourceTree = "<group>"; };
 		049E26B622F955040038019D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049E26C522F959D90038019D /* CustomDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDate.swift; sourceTree = "<group>"; };
+		049E26C722F95B260038019D /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		049E26C922F960C90038019D /* BirthdayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,8 @@
 		049E26C222F955380038019D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				049E26C522F959D90038019D /* CustomDate.swift */,
+				049E26C722F95B260038019D /* Characters.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				049E269622F955030038019D /* ViewController.swift */,
+				049E26C922F960C90038019D /* BirthdayViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -280,8 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049E26C622F959D90038019D /* CustomDate.swift in Sources */,
 				049E269722F955030038019D /* ViewController.swift in Sources */,
 				049E269522F955030038019D /* AppDelegate.swift in Sources */,
+				049E26C822F95B260038019D /* Characters.swift in Sources */,
+				049E26CA22F960C90038019D /* BirthdayViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

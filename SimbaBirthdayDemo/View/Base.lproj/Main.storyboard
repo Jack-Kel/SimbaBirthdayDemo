@@ -18,15 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2019-08-06 at 11.15.40 am" translatesAutoresizingMaskIntoConstraints="NO" id="dGQ-Kr-cdv">
-                                <rect key="frame" x="16" y="20" width="288" height="322.00000000000006"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doll_four" translatesAutoresizingMaskIntoConstraints="NO" id="dGQ-Kr-cdv">
+                                <rect key="frame" x="16" y="20" width="288" height="437.00000000000011"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPH-RM-352">
                                 <rect key="frame" x="16" y="518" width="288" height="30"/>
-                                <state key="normal" title="Change Doll"/>
+                                <state key="normal" title="Bless This Mess"/>
+                                <connections>
+                                    <action selector="btnChangeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5yk-4D-AJp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By1-6Y-MeK">
-                                <rect key="frame" x="16" y="360" width="288" height="33"/>
+                                <rect key="frame" x="16" y="475" width="288" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" red="0.69638798219999998" green="0.14621125830000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -47,6 +50,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="currentImage" destination="dGQ-Kr-cdv" id="mob-aP-Tzw"/>
+                        <outlet property="dateLabel" destination="By1-6Y-MeK" id="978-9y-f3B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,6 +61,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2019-08-06 at 11.15.40 am" width="246" height="322"/>
+        <image name="doll_four" width="482" height="498"/>
     </resources>
 </document>

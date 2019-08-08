@@ -9,10 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    private var viewModel = BirthdayViewModel()
+    
+    @IBOutlet weak var currentImage: UIImageView!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBAction func btnChangeImage(_ sender: Any) {
+        
+        currentImage.image = viewModel.getNextImage()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        dateLabel.text = viewModel.getBirthday(withFormat: "d MMMM yyyy")
     }
 
 
